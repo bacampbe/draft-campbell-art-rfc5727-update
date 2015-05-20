@@ -55,30 +55,23 @@
 
     <!-- Another author who claims to be an editor -->
 
-    <author fullname="Ben Campbell" initials="B." role="editor"
-            surname="Campbell">
-      <organization>Oracle</organization>
-
-      <address>
-        <postal>
-          <street></street>
-
-          <!-- Reorder these if your country does things differently -->
-
-          <city>Frisco</city>
-
-          <region></region>
-
-          <code></code>
-
-          <country>US</country>
-        </postal>
-
-        <email>ben@nostrum.com</email>
-
-        <!-- uri and facsimile elements may also be added -->
-      </address>
-    </author>
+	    <author fullname="Ben Campbell" initials="B." role="editor"
+	     surname="Campbell">
+	      <organization>Oracle</organization>
+	      <address>
+	        <postal>
+	          <street>7460 Warren Parkway # 300</street>
+	<!-- Reorder these if your country does things differently -->
+	          <city>Frisco</city>
+	          <region>Texas</region>
+	          <code>75034</code>
+	          <country>USA</country>
+	        </postal>
+	        <phone></phone>
+	        <email>ben@nostrum.com</email>
+	<!-- uri and facsimile elements may also be added -->
+	      </address>
+	    </author>
 
     <date month="May" year="2015" />
 
@@ -108,8 +101,8 @@
          keywords will be used for the search engine. -->
 
     <abstract>
-      <t>RFC 5727 defined several processes for the Real-time Applications and
-	     Infrastructure (RAI) area. These processes include the future evolution
+      <t>RFC 5727 defines several processes for the Real-time Applications and
+	     Infrastructure (RAI) area. These processes include the evolution
 	     of the Session Initiation Protocol (SIP) and related protocols, 
 	     as well as the operation of the DISPATCH and SIPCORE working groups.
 		 This document updates RFC 5727 to allow flexibility for the area
@@ -124,41 +117,44 @@
 		<xref target="RFC5727" /> describes processes for evolving and maintaining
 		the <xref target="RFC3261" > Session Initiation Protocol (SIP)</xref> and related
 		technologies in the Real-time Application and Infrastructure (RAI) area.
-	    These processes are collectively known as the "SIP Change Process".  While 
-	    areas do not normally have "charters" per se, RFC 5727 is effectively
-	    a charter for the RAI area.
+	    These processes are collectively known as the "SIP Change Process".  
 	</t>
+	<t> 
+		At the time of this writing, the Internet Engineering Steering Group 
+		(IESG) expects to reorganize the RAI area. While areas do not normally 
+		have "charters" per se, RFC 5727 
+		has effectively served as a charter for RAI.  The language 
+		in RFC 5727 is tightly bound to the area and to the the DISPATCH
+		and SIPCORE working groups.  This
+		document updates RFC 5727 to remove its dependency on RAI and its working
+		group structure. 
+	</t>	
+
 	<t>
 		RFC 5727 specifies that the DISPATCH working group assesses potential new
 		work for the area, and determines where such work should occur. DISPATCH does
 		not itself take on such new work. The SIPCORE working group is responsible
 		for maintenance of SIP. Other RAI working groups develop extensions to SIP that do
 		not change the core protocol, new applications of SIP, and other technologies
-		for interactive communication among humans.		
+		for interactive communication among humans.	This document further
+		generalizes the processes of the DISPATCH working group so that they can be
+		applied to other areas, or to clusters of technologies within an area.	
 	</t>
-	<t> 
-		The language in RFC 5727 is tightly bound to the RAI area and the DISPATCH
-		and SIPCORE working groups. At the time of this writing, the Internet 
-		Engineering Steering Group (IESG) expects to reorganize the RAI area. This
-		document updates RFC 5727 to remove its dependency on RAI and the working
-		group structure. 
-	</t>	
 	<t>	
 		While the reorganization is expected to involve merging RAI with
 		the Applications (APP) area and renaming the resulting area, the updates in
 		this document do not depend on that. Rather, the authors seek to future-proof
-		the SIP-Change process against future reorganizations. This document further
-		generalizes the processes of the DISPATCH working group so that they can be
-		applied to other areas, or to clusters of technologies within an area.
+		the SIP Change Process against future reorganizations. 
 	</t>
 	<t>
 		This document does not change any other aspect of RFC 5727. While areas and
 		working groups may change over time, the rules and procedures for changing SIP
-		and other RAI protocols remain the same, until they may be updated by 
-		some future document.
+		and other RAI protocols remain the same, until such time that they are 
+		updated by 
+	    future documents.
 	</t>
     </section>
-<section title="Dispatch Role">
+<section title="Dispatch-Style Working Groups">
 	<t>
 		The DISPATCH working group has proven successful at managing new work for 
 		the RAI area. Areas may choose to adopt DISPATCH-like procedures, either for
@@ -172,13 +168,14 @@
 				The working group evaluates proposals for new work for an area, or
 				for a well-defined technology cluster. It acts as a filter for
 				the area or cluster to determine whether a proposal is a reasonable
-	            use of or addition to the area or cluster. This determination 
+	            use of or addition to associated technologies. This determination 
 				may depend upon established
 	            criteria (for example, the SIP Change Process), the experience and
 	            expertise of the participants, or a combination of the two.
 			</t>
 			<t>
-				The working group determines an appropriate venue for the work.
+				The dispatch-style working group determines an appropriate venue
+				for the work.
 				The venue could be an existing working group. If no appropriate
 				group exist, it may develop a charter for a BoF, a new working
 				group, or an <xref target="RFC5111"> exploratory group</xref>. 
@@ -195,32 +192,33 @@
 		</list>
 	</t>
 	<t>
-		Nothing in this list prevents existing working groups from adopting
+		Nothing in this list prevents existing working groups from directly 
+		adopting
 		new work that reasonably fits their charters. For borderline cases,
 		the decision whether new work should start in a dispatch-style  group,
-		or in an existing group will be a judgement call among the responsible
+		or in an existing group is a judgement call among the responsible
 		Area Directors and chairs. Likewise, in cases where an area has multiple
 		dispatch-style groups for different purposes or technology clusters, the
-		decision about which group will handle a particular proposal will be a
+		decision about which group will handle a particular proposal is a
 		judgement call.
 	</t>
 	<t>
 	    The charter of a dispatch-style group should make that fact clear, either
-	     by referencing this document, or by describing similar procedures directly.
+	    by referencing this document, or by directly describing similar procedures.
 	</t>
 </section>
 <section title="Decoupling the SIP-Change Process from the RAI Area">
      <t>
-     	This document clarifies that the SIP-Change process is not bound to
+     	This document clarifies that the SIP Change Process is not bound to
 		any particular area or working group structure. All references to
-		the RAI area in RFC 5727 should be interpreted as "the  cluster
+		the RAI area in RFC 5727 should be interpreted as "the cluster
 		of SIP and closely related application and infrastructure technologies, 
 		as well as other technologies designed primarily for interactive 
 		communication among humans."
 	 </t>
 	 <t>
 	 	While the DISPATCH and SIPCORE working groups are expected to continue
-	    in their current capacities, nothing in the SIP-Change process prevents
+	    in their current capacities, nothing in the SIP Change Process prevents
 		their responsibilities from being assigned to other working groups
 		in the future. 
 	 </t>
@@ -241,8 +239,8 @@
 	<t>
 		However, organizational structures come with their own security
 		considerations. A dispatch-stye
-		working group has the potential to concentrate control
-		over work for an area or cluster in the hands of a small number of people.
+		working group has the potential to concentrate the control
+		of work for an area or cluster in the hands of a small number of people.
 		This could have the effect of a "Denial of Service Attack" against
 		the area or cluster. Likewise, such a concentration could reduce the
 		quality of decisions about new work. Care must be taken to avoid this risk.
