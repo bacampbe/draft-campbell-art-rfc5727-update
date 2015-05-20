@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE rfc SYSTEM "rfc2629.dtd" [
+<!-- One method to get references from the online citation libraries.
+     There has to be one entity for each item to be referenced. 
+     An alternate method (rfc include) is described in the references. -->
+
+<!ENTITY RFC2119 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2119.xml">
+<!ENTITY RFC5727 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5727.xml">
+<!ENTITY RFC3261 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.3261.xml">
+<!ENTITY RFC5111 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5111.xml">
+<!ENTITY RFC3427 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.3427.xml">
+
+]>
+<?xml-stylesheet type='text/xsl' href='rfc2629.xslt' ?>
+<!-- used by XSLT processors -->
+<!-- For a complete list and description of processing instructions (PIs), 
+     please see http://xml.resource.org/authoring/README.html. -->
+<!-- Below are generally applicable Processing Instructions (PIs) that most I-Ds might want to use.
+     (Here they are set differently than their defaults in xml2rfc v1.32) -->
+<?rfc strict="yes" ?>
+<!-- give errors regarding ID-nits and DTD validation -->
+<!-- control the table of contents (ToC) -->
+<?rfc toc="yes"?>
+<!-- generate a ToC -->
+<?rfc tocdepth="4"?>
+<!-- the number of levels of subsections in ToC. default: 3 -->
+<!-- control references -->
+<?rfc symrefs="yes"?>
+<!-- use symbolic references tags, i.e, [RFC2119] instead of [1] -->
+<?rfc sortrefs="yes" ?>
+<!-- sort the reference entries alphabetically -->
+<!-- control vertical white space 
+     (using these PIs as follows is recommended by the RFC Editor) -->
+<?rfc compact="yes" ?>
+<!-- do not start each main section on a new page -->
+<?rfc subcompact="no" ?>
+<!-- keep one blank line between list items -->
+<!-- end of list of popular I-D processing instructions -->
+<rfc category="bcp" docName="draft-campbell-art-rfc5727-update-00" ipr="trust200902" updates="5727">
+  <!-- category values: std, bcp, info, exp, and historic
+     ipr values: full3667, noModification3667, noDerivatives3667
+     you can add the attributes updates="NNNN" and obsoletes="NNNN" 
+     they will automatically be output with "(if approved)" -->
+
+  <!-- ***** FRONT MATTER ***** -->
+
+  <front>
+    <!-- The abbreviated title is used in the page header - it is only necessary if the 
+         full title is longer than 39 characters -->
+
+    <title abbrev="SIP-Change Update">Improving the Organizational Flexibility
+	of the SIP Change Process.</title>
+
+    <!-- add 'role="editor"' below for the editors if appropriate -->
+
+    <!-- Another author who claims to be an editor -->
+
+    <author fullname="Ben Campbell" initials="B." role="editor"
+            surname="Campbell">
+      <organization>Oracle</organization>
+
+      <address>
+        <postal>
+          <street></street>
+
+          <!-- Reorder these if your country does things differently -->
+
+          <city>Frisco</city>
+
+          <region></region>
+
+          <code></code>
+
+          <country>US</country>
+        </postal>
+
+        <email>ben@nostrum.com</email>
+
+        <!-- uri and facsimile elements may also be added -->
+      </address>
+    </author>
+
+    <date month="May" year="2015" />
+
+    <!-- If the month and year are both specified and are the current ones, xml2rfc will fill 
+         in the current day for you. If only the current year is specified, xml2rfc will fill 
+	 in the current day and month for you. If the year is not the current one, it is 
+	 necessary to specify at least a month (xml2rfc assumes day="1" if not specified for the 
+	 purpose of calculating the expiry date).  With drafts it is normally sufficient to 
+	 specify just the year. -->
+
+    <!-- Meta-data Declarations -->
+
+    <area>Applications and Real-Time</area>
+
+    <workgroup>Internet Engineering Task Force</workgroup>
+
+    <!-- WG name at the upperleft corner of the doc,
+         IETF is fine for individual submissions.  
+	 If this element is not present, the default is "Network Working Group",
+         which is used by the RFC Editor as a nod to the history of the IETF. -->
+
+    <keyword>dispatch RAI ART sip-change</keyword>
+
+    <!-- Keywords will be incorporated into HTML output
+         files in a meta tag but they have no effect on text or nroff
+         output. If you submit your draft to the RFC Editor, the
+         keywords will be used for the search engine. -->
+
+    <abstract>
+      <t>RFC 5727 defined several processes for the Real-time Applications and
+	     Infrastructure (RAI) area. These processes include the future evolution
+	     of the Session Initiation Protocol (SIP) and related protocols, 
+	     as well as the operation of the DISPATCH and SIPCORE working groups.
+		 This document updates RFC 5727 to allow flexibility for the area
+		 and working group structure, while preserving the SIP change processes.
+	 </t>
+    </abstract>
+  </front>
+
+  <middle>
+    <section title="Introduction">
+	<t>
+		<xref target="RFC5727" /> describes processes for evolving and maintaining
+		the <xref target="RFC3261" > Session Initiation Protocol (SIP)</xref> and related
+		technologies in the Real-time Application and Infrastructure (RAI) area.
+	    These processes are collectively known as the "SIP Change Process".  While 
+	    areas do not normally have "charters" per se, RFC 5727 is effectively
+	    a charter for the RAI area.
+	</t>
+	<t>
+		RFC 5727 specifies that the DISPATCH working group assesses potential new
+		work for the area, and determines where such work should occur. DISPATCH does
+		not itself take on such new work. The SIPCORE working group is responsible
+		for maintenance of SIP. Other RAI working groups develop extensions to SIP that do
+		not change the core protocol, new applications of SIP, and other technologies
+		for interactive communication among humans.		
+	</t>
+	<t> 
+		The language in RFC 5727 is tightly bound to the RAI area and the DISPATCH
+		and SIPCORE working groups. At the time of this writing, the Internet 
+		Engineering Steering Group (IESG) expects to reorganize the RAI area. This
+		document updates RFC 5727 to remove its dependency on RAI and the working
+		group structure. 
+	</t>	
+	<t>	
+		While the reorganization is expected to involve merging RAI with
+		the Applications (APP) area and renaming the resulting area, the updates in
+		this document do not depend on that. Rather, the authors seek to future-proof
+		the SIP-Change process against future reorganizations. This document further
+		generalizes the processes of the DISPATCH working group so that they can be
+		applied to other areas, or to clusters of technologies within an area.
+	</t>
+	<t>
+		This document does not change any other aspect of RFC 5727. While areas and
+		working groups may change over time, the rules and procedures for changing SIP
+		and other RAI protocols remain the same, until they may be updated by 
+		some future document.
+	</t>
+    </section>
+<section title="Dispatch Role">
+	<t>
+		The DISPATCH working group has proven successful at managing new work for 
+		the RAI area. Areas may choose to adopt DISPATCH-like procedures, either for
+		an entire area, or for technology-clusters in an area or across areas.
+		A "Dispatch-Style" working group operates according to procedures
+		similar to those used for DISPATCH.
+	</t>
+	<t>The "Dispatch Style" includes the following essential elements:
+		<list style="symbols">
+			<t>
+				The working group evaluates proposals for new work for an area, or
+				for a well-defined technology cluster. It acts as a filter for
+				the area or cluster to determine whether a proposal is a reasonable
+	            use of or addition to the area or cluster. This determination 
+				may depend upon established
+	            criteria (for example, the SIP Change Process), the experience and
+	            expertise of the participants, or a combination of the two.
+			</t>
+			<t>
+				The working group determines an appropriate venue for the work.
+				The venue could be an existing working group. If no appropriate
+				group exist, it may develop a charter for a BoF, a new working
+				group, or an <xref target="RFC5111"> exploratory group</xref>. 
+				The working group may also determine that a proposal should not
+				be acted upon at the time. 
+			</t>
+			<t>
+				The working group does not complete the proposed work. It may, 
+				however, adopt milestones needed to properly dispatch the work.
+				For example, it may produce charter text for a BoF or a new
+				working group, an initial problem statement, or documentation
+				about why certain work was not pursued. 			 
+			</t>	
+		</list>
+	</t>
+	<t>
+		Nothing in this list prevents existing working groups from adopting
+		new work that reasonably fits their charters. For borderline cases,
+		the decision whether new work should start in a dispatch-style  group,
+		or in an existing group will be a judgement call among the responsible
+		Area Directors and chairs. Likewise, in cases where an area has multiple
+		dispatch-style groups for different purposes or technology clusters, the
+		decision about which group will handle a particular proposal will be a
+		judgement call.
+	</t>
+	<t>
+	    The charter of a dispatch-style group should make that fact clear, either
+	     by referencing this document, or by describing similar procedures directly.
+	</t>
+</section>
+<section title="Decoupling the SIP-Change Process from the RAI Area">
+     <t>
+     	This document clarifies that the SIP-Change process is not bound to
+		any particular area or working group structure. All references to
+		the RAI area in RFC 5727 should be interpreted as "the  cluster
+		of SIP and closely related application and infrastructure technologies, 
+		as well as other technologies designed primarily for interactive 
+		communication among humans."
+	 </t>
+	 <t>
+	 	While the DISPATCH and SIPCORE working groups are expected to continue
+	    in their current capacities, nothing in the SIP-Change process prevents
+		their responsibilities from being assigned to other working groups
+		in the future. 
+	 </t>
+	 <t>
+	 	All other aspects of the SIP-Change process are to continue as described
+		in RFC 5727.
+	 </t>
+ </section>
+    <section anchor="IANA" title="IANA Considerations">
+      <t>This document makes no requests to IANA.</t>
+    </section>
+    <section anchor="Security" title="Security Considerations">
+      <t>
+		This document discusses the roles and responsibilities of areas 
+		and working groups. It does not create new security considerations
+		in the conventional sense. 
+	</t>
+	<t>
+		However, organizational structures come with their own security
+		considerations. A dispatch-stye
+		working group has the potential to concentrate control
+		over work for an area or cluster in the hands of a small number of people.
+		This could have the effect of a "Denial of Service Attack" against
+		the area or cluster. Likewise, such a concentration could reduce the
+		quality of decisions about new work. Care must be taken to avoid this risk.
+		While this responsibility lies primarily with the relevant Area Directors,
+		all participants must play a roll.    	                                 
+	  </t>
+		
+    </section>
+    <section anchor="Acknowledgements" title="Acknowledgements">
+	<t>
+		The authors would like to thank all the previous authors of the SIP Change
+		Process for their contributions. Jon Peterson, Cullen Jennings, and Robert
+		Sparks authored RFC 5727. That RFC obsoleted <xref target="RFC3427"/>, which
+		was in turn
+		written by Allison Mankin, Scott Bradner, Rohan Mahy, Dean Willis, Brian
+		Rosen, and Joerg Ott.
+	</t>
+	<t>
+		The authors additionally thank the present and past chairs of DISPATCH
+		and SIPCORE, as well as all the participants in the RAI area since its
+		inception.
+	</t>
+    </section>
+
+  </middle>
+
+  <!--  *****BACK MATTER ***** -->
+
+  <back>
+
+    <references title="Normative References">
+      <!--?rfc include="http://xml.resource.org/public/rfc/bibxml/reference.RFC.2119.xml"?-->
+      &RFC5727;
+    </references>
+<references title="Informative Reverences">
+	 &RFC3261;
+	 &RFC5111;
+	 &RFC3427;
+</references>
+  </back>
+</rfc>
