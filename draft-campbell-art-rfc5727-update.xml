@@ -59,19 +59,25 @@
 	     surname="Campbell">
 	      <organization>Oracle</organization>
 	      <address>
-	        <postal>
-	          <street>7460 Warren Parkway # 300</street>
-	<!-- Reorder these if your country does things differently -->
-	          <city>Frisco</city>
-	          <region>Texas</region>
-	          <code>75034</code>
-	          <country>USA</country>
-	        </postal>
 	        <phone></phone>
 	        <email>ben@nostrum.com</email>
 	<!-- uri and facsimile elements may also be added -->
 	      </address>
 	    </author>
+        <author fullname="ALissa Cooper" initials="A." surname="Cooper">
+			<organization>Cisco</organization>
+			<address>
+				<phone/>
+				<email>alcoop@cisco.com</email>
+			</address>
+		</author>	
+        <author fullname="Barry Leiba" initials="B." surname="Leiba">
+			<organization>Huawei</organization>
+			<address>
+				<phone/>
+				<email>barryleiba@computer.org</email>
+			</address>
+		</author>	
 
     <date month="May" year="2015" />
 
