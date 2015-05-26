@@ -113,6 +113,8 @@
 	     as well as the operation of the DISPATCH and SIPCORE working groups.
 		 This document updates RFC 5727 to allow flexibility for the area
 		 and working group structure, while preserving the SIP change processes.
+		It also generalized the DISPATCH working group processes so that they
+		can be easily adopted by other working groups.
 	 </t>
     </abstract>
   </front>
@@ -189,8 +191,8 @@
 				be acted upon at the time. 
 			</t>
 			<t>
-				The working group does not complete the proposed work. It may, 
-				however, adopt milestones needed to properly dispatch the work.
+				The dispatch-style working group does not complete the proposed work.
+				It may, however, adopt milestones needed to properly dispatch the work.
 				For example, it may produce charter text for a BoF or a new
 				working group, an initial problem statement, or documentation
 				about why certain work was not pursued. 			 
@@ -251,7 +253,7 @@
 		the area or cluster. Likewise, such a concentration could reduce the
 		quality of decisions about new work. Care must be taken to avoid this risk.
 		While this responsibility lies primarily with the relevant Area Directors,
-		all participants must play a roll.    	                                 
+		all participants must play a role.    	                                 
 	  </t>
 		
     </section>
