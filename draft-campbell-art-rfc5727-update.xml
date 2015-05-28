@@ -113,7 +113,7 @@
 	     as well as the operation of the DISPATCH and SIPCORE working groups.
 		 This document updates RFC 5727 to allow flexibility for the area
 		 and working group structure, while preserving the SIP change processes.
-		It also generalized the DISPATCH working group processes so that they
+		It also generalizes the DISPATCH working group processes so that they
 		can be easily adopted by other working groups.
 	 </t>
     </abstract>
