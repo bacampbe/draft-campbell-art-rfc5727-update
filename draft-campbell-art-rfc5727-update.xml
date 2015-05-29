@@ -246,14 +246,14 @@
 	</t>
 	<t>
 		However, organizational structures come with their own security
-		considerations. A dispatch-stye
-		working group has the potential to concentrate the control
-		of work for an area or cluster in the hands of a small number of people.
-		This could have the effect of a "Denial of Service Attack" against
-		the area or cluster. Likewise, such a concentration could reduce the
-		quality of decisions about new work. Care must be taken to avoid this risk.
-		While this responsibility lies primarily with the relevant Area Directors,
-		all participants must play a role.    	                                 
+		   considerations.  A dispatch-stye working group has the potential to
+		   concentrate the control of work for an area or cluster in the hands
+		   of a much smaller set of people than those in the whole area or
+		   cluster.  This could have the effect of a "Denial of Service Attack"
+		   against the area or cluster.  Likewise, such a concentration could
+		   reduce the quality of decisions about new work. Care must be
+		   taken to avoid this risk. The best mitigation is active participation
+		   in the group by as many people in the area or cluster as possible.
 	  </t>
 		
     </section>
