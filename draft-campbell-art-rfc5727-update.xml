@@ -36,7 +36,7 @@
 <?rfc subcompact="no" ?>
 <!-- keep one blank line between list items -->
 <!-- end of list of popular I-D processing instructions -->
-<rfc category="bcp" docName="draft-campbell-art-rfc5727-update-01" ipr="trust200902" updates="5727">
+<rfc category="bcp" docName="draft-campbell-art-rfc5727-update-02" ipr="trust200902" updates="5727">
   <!-- category values: std, bcp, info, exp, and historic
      ipr values: full3667, noModification3667, noDerivatives3667
      you can add the attributes updates="NNNN" and obsoletes="NNNN" 
@@ -79,7 +79,7 @@
 			</address>
 		</author>	
 
-    <date month="May" year="2015" />
+    <date month="June" year="2015" />
 
     <!-- If the month and year are both specified and are the current ones, xml2rfc will fill 
          in the current day for you. If only the current year is specified, xml2rfc will fill 
@@ -124,18 +124,19 @@
 	<t>
 		<xref target="RFC5727" /> describes processes for evolving and maintaining
 		the <xref target="RFC3261" > Session Initiation Protocol (SIP)</xref> and related
-		technologies in the Real-time Application and Infrastructure (RAI) area.
-	    These processes are collectively known as the "SIP Change Process".  
-	</t>
-	<t> 
-		At the time of this writing, the Internet Engineering Steering Group 
-		(IESG) expects to reorganize the RAI area. While areas do not normally 
+		technologies in the former Real-time Application and Infrastructure (RAI) area.
+	    These processes are collectively known as the "SIP Change Process".
+		While areas do not normally 
 		have "charters" per se, RFC 5727 
 		has effectively served as a charter for RAI.  The language 
-		in RFC 5727 is tightly bound to the area and to the the DISPATCH
-		and SIPCORE working groups.  This
-		document updates RFC 5727 to remove its dependency on RAI and its working
-		group structure. 
+		in RFC 5727 is tightly bound to the RAI area and to the the DISPATCH
+		and SIPCORE working groups.  
+	</t>
+	<t>
+		At the time of this writing, the RAI area recently merged 
+		with the Applications (APP) area to form a new Applications and 
+		Real-Time (ART) area. This document updates RFC 5727 to remove 
+		its dependency on RAI and its working group structure. 
 	</t>	
 
 	<t>
