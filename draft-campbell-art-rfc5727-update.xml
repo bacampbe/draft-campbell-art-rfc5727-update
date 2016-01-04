@@ -36,7 +36,7 @@
 <?rfc subcompact="no" ?>
 <!-- keep one blank line between list items -->
 <!-- end of list of popular I-D processing instructions -->
-<rfc category="bcp" docName="draft-campbell-art-rfc5727-update-02" ipr="trust200902" updates="5727">
+<rfc category="bcp" docName="draft-campbell-art-rfc5727-update-03" ipr="trust200902" updates="5727">
   <!-- category values: std, bcp, info, exp, and historic
      ipr values: full3667, noModification3667, noDerivatives3667
      you can add the attributes updates="NNNN" and obsoletes="NNNN" 
@@ -79,7 +79,7 @@
 			</address>
 		</author>	
 
-    <date month="June" year="2015" />
+    <date month="January" year="2016" />
 
     <!-- If the month and year are both specified and are the current ones, xml2rfc will fill 
          in the current day for you. If only the current year is specified, xml2rfc will fill 
@@ -186,7 +186,7 @@
 				The dispatch-style working group determines an appropriate venue
 				for the work.
 				The venue could be an existing working group. If no appropriate
-				group exist, it may develop a charter for a BoF, a new working
+				group exists, it may develop a charter for a BoF, a new working
 				group, or an <xref target="RFC5111"> exploratory group</xref>. 
 				The working group may also determine that a proposal should not
 				be acted upon at the time. 
@@ -201,15 +201,16 @@
 		</list>
 	</t>
 	<t>
-		Nothing in this list prevents existing working groups from directly 
-		adopting
-		new work that reasonably fits their charters. For borderline cases,
-		the decision whether new work should start in a dispatch-style  group,
-		or in an existing group is a judgement call among the responsible
-		Area Directors and chairs. Likewise, in cases where an area has multiple
-		dispatch-style groups for different purposes or technology clusters, the
-		decision about which group will handle a particular proposal is a
-		judgement call.
+	   Nothing in this list prevents existing working groups from directly
+	   adopting new work that reasonably fits their charters.  For
+	   borderline cases, the decision whether new work should start in a
+	   dispatch-style group or in an existing group is made by the
+	   responsible Area Directors and chairs.  Likewise, in cases
+	   where an area has multiple dispatch-style groups for different
+	   purposes or technology clusters, deciding which group will handle
+	   a particular proposal is up to the responsible Area Directors and
+	   relevant chairs.
+	 
 	</t>
 	<t>
 	    The charter of a dispatch-style group should make that fact clear, either
@@ -284,7 +285,7 @@
       <!--?rfc include="http://xml.resource.org/public/rfc/bibxml/reference.RFC.2119.xml"?-->
       &RFC5727;
     </references>
-<references title="Informative Reverences">
+<references title="Informative References">
 	 &RFC3261;
 	 &RFC5111;
 	 &RFC3427;
