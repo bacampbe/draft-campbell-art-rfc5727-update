@@ -133,12 +133,15 @@
 		and SIPCORE working groups.  
 	</t>
 	<t>
-		At the time of this writing, the RAI area recently merged 
-		with the Applications (APP) area to form a new Applications and 
+		in 2015, The RAI area  merged 
+		with the Applications (APP) area to form the Applications and 
 		Real-Time (ART) area. This document updates RFC 5727 to remove 
 		its dependency on RAI and its working group structure. 
-	</t>	
-
+		The updates in
+		this document do not depend on the names of the new area, or any specific
+		working group. Rather, the authors seek to future-proof
+		the SIP Change Process against future reorganizations. 
+	</t>
 	<t>
 		RFC 5727 specifies that the DISPATCH working group assesses potential new
 		work for the area, and determines where such work should occur. DISPATCH does
@@ -149,13 +152,7 @@
 		generalizes the processes of the DISPATCH working group so that they can be
 		applied to other areas, or to clusters of technologies within an area.	
 	</t>
-	<t>	
-		While the reorganization is expected to involve merging RAI with
-		the Applications (APP) area and renaming the resulting area, the updates in
-		this document do not depend on that. Rather, the authors seek to future-proof
-		the SIP Change Process against future reorganizations. 
-	</t>
-	<t>
+ 	<t>
 		This document does not change any other aspect of RFC 5727. While areas and
 		working groups may change over time, the rules and procedures for changing SIP
 		and other RAI protocols remain the same, until such time that they are 
