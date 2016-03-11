@@ -174,9 +174,9 @@
           the work. The venue could be an existing working group. If no
           appropriate group exists, it may develop a charter for a BoF, a new
           working group, or an <xref target="RFC5111"> exploratory
-          group</xref>. The group might also recommend a proposal progress as
-          an AD-sponsored individual draft, or even that a proposal should not
-          be acted upon at the time.
+          group</xref>. The group might also recommend that a proposal
+          progress as an AD-sponsored individual draft, or even that a
+          proposal should not be acted upon at the time.
          </t>
          <t>
           The dispatch-style working group does not complete the proposed
@@ -192,9 +192,9 @@
        adopting new work that reasonably fits their charters, nor does it
        prevent new-work proposals from going directly to BoF meetings when
        appropriate. For borderline cases, the decision whether new work should
-       start in a dispatch-style group or in an existing group is made by the
-       responsible Area Directors and chairs. Likewise, in cases where an area
-       has multiple dispatch-style groups for different purposes or technology
+       start in a dispatch-style group or elsewhere is made by the responsible
+       Area Directors and chairs. Likewise, in cases where an area has
+       multiple dispatch-style groups for different purposes or technology
        clusters, deciding which group will handle a particular proposal is up
        to the responsible Area Directors and relevant chairs.
       </t>
